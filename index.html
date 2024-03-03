@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <style>
+        .photo{
+            width: 100%;
+            height:800px;
+        }
+        #picture{
+            background-color: rgb(152, 151, 151);
+        }
+        .modalbtn{
+            position: relative;
+            z-index: 3;
+            color: aliceblue;
+            background-color:rgb(87, 87, 87);
+            top: 70vh;
+            border: none;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <script src="./bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/1.jpg" class="photo" alt="pretty">
+          </div>
+          <button type="button" class="modalbtn" data-bs-toggle="modal" data-bs-target="#myModal">
+            <h1> Open modal</h1>
+           </button>
+          <div class="carousel-item">
+            <img src="./image/2.jpg" class="photo" alt="pretty">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/3.jpg" class="photo" alt="pretty">
+          </div>
+          
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Modal body..
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+        </div>
+          </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 style="text-align: center; margin: 20px; ">Our Team</h1>
+      <h4 style="text-align: center; margin: 20px; ">Meet the team - our office rats :</h4>
+    
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-lg">
+            <img src="./image/avatar.jpg" class="pic rounded-circle">
+            <h3>Johnny Walker</h3>
+            <h6>Web Designer</h6>
+          </div>
+          <div class="col-lg">
+            <img src="./image/avatar.jpg" class="pic rounded-circle">
+            <h3>Rebecca Flex</h3>
+            <h6>Support</h6>
+          </div>
+          <div class="col-lg">
+            <img src="./image/avatar.jpg" class="pic rounded-circle">
+            <h3>Jan Ringo</h3>
+            <h6>Boss man</h6>
+          </div>
+          <div class="col-lg">
+            <img src="./image/avatar.jpg" class="pic rounded-circle">
+            <h3>Kai Ringo</h3>
+            <h6>Fixer</h6>
+          </div>
+        </div>
+      </div>
+<div class="container-fluid text-center; " id="picture" style="width: 100%;">
+    <div class="row" style="width: 100%;">
+        <div class="col-lg">
+            <h1 style="margin: 20px;">Our Work</h1>
+            <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.<br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.<br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.<br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-lg">
+            <div class="card w-100" style="width: 18rem; margin-top: 20px;">
+                <img src="./image/snow.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Snow</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="https://unsplash.com/s/photos/snow"
+                        class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card w-100" style="width: 18rem; margin-top: 20px;">
+                <img src="./image/lights.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lights</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="https://pixabay.com/images/search/light/"
+                        class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card w-100" style="width: 18rem; margin-top: 20px;">
+                <img src="./image/mountains.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mountains</h5>
+                    <p class="card-text">Some quick example text to build on the
+                        card title and make up the bulk of the card's content.
+                    </p>
+                    <a href="https://www.google.com/search?sca_esv=593414016&rlz=1C1CHNY_enEG899EG899&sxsrf=AM9HkKnLxj0fe07JExsFUK6WoNWfRK2baA:1703420007585&q=mountain+image&tbm=isch&chips=q:mountain+image,online_chips:beautiful+mountains:UJTRSL2fNbA%3D&usg=AI4_-kSqKmOLYc6nhqxolU76wRgf2JN7rQ&sa=X&ved=2ahUKEwi6g9KDhqiDAxVRtKQKHX8QDGYQgIoDKAB6BAgIEBE&biw=1536&bih=695&dpr=1.25"
+                        class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 style="text-align: center; margin: 20px;">PRICING</h1>
+<h5 style="text-align: center; margin: 20px;">Choose a pricing plan that fits
+    your needs..</h5>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-header">
+                    <h1>Basic</h1>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h4>10GB Storage</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>10 Emails</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>10 Domains</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Endless Support</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4> 10 $ per month</h4>
+                    </li>
+                </ul>
+                <button>
+                    <h5>SignUp</h5>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-header">
+                    <h1>Pro</h1>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h4>25GB Storage</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>25 Emails</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>25 Domains</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Endless Support</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4> 25 $ per month</h4>
+                    </li>
+                </ul>
+                <button>
+                    <h5>SignUp</h5>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-header">
+                    <h1>Premium</h1>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <h4>50GB Storage</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>50 Emails</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>50 Domains</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Endless Support</h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4> 50 $ per month</h4>
+                    </li>
+                </ul>
+                <button>
+                    <h5>SignUp</h5>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+      
+</body>
+</html>
